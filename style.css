@@ -1,23 +1,19 @@
-.nombrePropio {
-    font-family: "Dancing Script", cursive;
-    font-size: 300%;
-}
-.slogan{
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-
-}
-h2{
-    text-align: center;
+/* Fondo y colores base */
+body {
+    font-family: 'Merienda', sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
-.nombrePropio {
+.nombrePropio, h2, h3, h4 {
+    color: #09f;
     text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-.barraSuperior{
-    text-align: right;
-}
 /* comienzo estilo glich */
 .bg-6 {
     background-color: #000000;
@@ -231,3 +227,208 @@ h2{
 }
 
 /* culminacion estilo glitch */
+
+
+/* Contenedor de la imagen y el eslogan */
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Imagen del perfil */
+.perfil-foto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px #09f, 0 0 15px #0ff;
+}
+
+/* Eslogan del perfil */
+.slogan-perfil {
+    max-width: 600px; /* Asegura que el texto no se extienda demasiado */
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+    text-shadow: 0 0 5px #09f;
+    margin: 0;
+}
+
+/* Responsividad: cuando la pantalla es más pequeña */
+@media (max-width: 768px) {
+    .perfil-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .perfil-foto {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .slogan-perfil {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slogan-perfil {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Barra de navegación futurista */
+.barraSuperior {
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #09f;
+}
+
+.barraSuperior a {
+    color: #09f;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.barraSuperior a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #09f, 0 0 10px #fff;
+}
+
+Efectos de texto futurista
+h1.nombrePropio, h2 {
+    text-shadow: 0 0 10px #09f, 0 0 20px #fff;
+}
+
+p.slogan {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #09f;
+}
+
+/* Listas de experiencias */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    background-color: rgba(13, 13, 13, 0.6);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #09f, 0 0 15px #0ff;
+    transition: transform 0.3s ease;
+}
+
+.list-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #09f, 0 0 20px #0ff;
+}
+
+.list-item h3 {
+    color: #09f;
+}
+
+.list-item p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-shadow: 0 0 5px #0ff;
+}
+
+/* Botones futuristas */
+button, input[type="submit"] {
+    background: linear-gradient(45deg, #09f, #0ff);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+button:hover, input[type="submit"]:hover {
+    box-shadow: 0 0 20px #09f, 0 0 30px #0ff;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #09f;
+    border-top: 1px solid #09f;
+    box-shadow: 0 -2px 10px #09f;
+}
+/* Contenedor con fondo */
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: left;
+    padding: 50px; /* Añade espacio alrededor del contenido */
+    background-image: url('img/fondo1.png'); /* Ruta a tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    border-radius: 12px; /* Opcional: añade bordes redondeados si lo deseas */
+}
+
+/* Imagen del perfil */
+.perfil-foto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px #09f, 0 0 15px #0ff;
+}
+
+/* Eslogan del perfil */
+.slogan-perfil {
+    max-width: 600px; /* Limita el ancho del texto */
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+    text-shadow: 0 0 5px #09f;
+    margin: 0;
+}
+
+/* Responsividad: en pantallas pequeñas */
+@media (max-width: 768px) {
+    .perfil-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .perfil-foto {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .slogan-perfil {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slogan-perfil {
+        font-size: 0.9rem;
+    }
+}
