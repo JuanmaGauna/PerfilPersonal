@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Juan Manuel Gauna 🧑‍💻</title>
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+    <meta name="description"
+        content="Portfolio de Juan Manuel Gauna de la ciudad de San Francisco, Córdoba, Argentina, Fullstack developer y sistemas de información.">
+    <link rel="icon" type="image/jpg" href="img/juangauna.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <audio autoplay src="sound/inicio.wav"></audio> -->
+    <header>
+            <nav class="barraSuperior">
+                <a href="#experiencia" data-lang="experiencia">Experiencia</a>
+                <a href="#proyectos" data-lang="proyectos">Proyectos realizados</a>
+                <a href="https://www.linkedin.com/in/juanmanuelgauna" target="_blank" rel="noreferer">My LinkedIn</a>
+                <button onclick="cambiarIdioma('es')">🇦🇷</button>
+                <button onclick="cambiarIdioma('en')">🇺🇸</button>
+            </nav>
+        <h1 class="bg-6">
+
+            <div class="glitch" data-text="Portfolio">Portfolio</div>
+            <h1 class="nombrePropio">Juan Manuel Gauna</h1>
+            <h2>Fullstack developer</h2>
+            <p class="slogan">"Building the future, one line of code at a time."</p>
+            <div>
+                
+            </div>
+            
+    </header>
+
+    <main>
+        <p data-lang="descripcion">
+            Soy un profesional en el ámbito de las <strong>tecnologías</strong> y los <strong>sistemas</strong>, con una
+            sólida trayectoria en la implementación y desarrollo de soluciones tecnológicas...
+        </p>
+        <h2 id="experiencia" data-lang="experiencia">Experiencia</h2>
+        <ul>
+            <li class="list-item" data-lang="experienciaA">Experiencia A</li>
+            <li class="list-item" data-lang="experienciaB">Experiencia B</li>
+            <li class="list-item" data-lang="experienciaC">Experiencia C</li>
+        </ul>
+        <img width=200px title="Juan Manuel Gauna" alt="Retrato de Juan Manuel Gauna" src="img/JuanGauna.png">
+        <h2 id="proyectos" data-lang="proyectos">Proyectos realizados</h2>
+        <aside>
+            <header>
+                <h3 data-lang="tecnologiasFavoritas">Mis tecnologías favoritas</h3>
+            </header>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+            </ul>
+        </aside>
+        <section>
+            <article>
+                <header>
+                    <h4 data-lang="sitioCorporativo">Sitio web corporativo</h4>
+                </header>
+                <p data-lang="descripcionProyecto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </p>
+            </article>
+            <footer>
+                <small data-lang="tecnologiasUsadas">Tecnologías utilizadas: HTML, CSS, JavaScript.</small>
+            </footer>
+        </section>
+
+        <section>
+            <details>
+                <summary>Mis "Hobbies"</summary>
+                <p>Me gusta mucho viajar, pasar tiempo con mi familia y amigos, conocer gente, tocar la guitarra,
+                    cantar, cocinar y hacer deporte! <strong>Creo que la vida se basa en pequeños grandes
+                        momentos.</strong> 😁
+                </p>
+            </details>
+            <details>
+                <summary>Mi segunda casa.</summary>
+                <p>Por supuesto, mi amada <strong>Universidad Tecnológica Nacional</strong> (UTN San Francisco), fuente
+                    de conocimiento y
+                    progeso incalculable. 🏛️</p>
+            </details>
+            <details>
+                <summary>La vida misma.</summary>
+                <p>A seguir! Avant courage et gloire! Hasta el último suspiro! Sé un guerrero siempre y que ni el viento
+                    más
+                    poderoso te derrote. <strong> tú puedes!</strong> Levántate y sigue adelante.💪</p>
+            </details>
+        </section>
+        <dialog id="dialog">
+            <!-- Formnulario de contacto -->
+            <section>
+                <h2 data-lang="formularioContacto">Formulario de contacto</h2>
+                <form method="post" action="/">
+                    <fieldset>
+                        <legend data-lang="informacionPersonal">Información personal</legend>
+                        <div>
+                            <label for="name" data-lang="nombre">Nombre:</label>
+                            <input type="text" id="name" name="name" placeholder="Juanma Gauna" required>
+                        </div>
+                        <label for="email" data-lang="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="juanmanuelgauna@gmail.com" size=40px
+                            required>
+                    </fieldset>
+                    <fieldset>
+                        <legend data-lang="informacionAdicional">Información adicional</legend>
+                        <label for="phone" data-lang="telefono">📞Teléfono:</label>
+                        <input type="tel" id="phone" name="number" placeholder="3564...." required pattern="[0-9]{9}">
+                    </fieldset>
+                    <input type="submit" value="Enviar" data-lang="enviar">
+                </form>
+            </section>
+            <button id="close">Cerrar</button>
+        </dialog>
+
+        <button id="show">Contacto</button>
+
+        <script>
+            // Obtener los elementos usando getElementById
+            const dialog = document.getElementById('dialog');
+            const showButton = document.getElementById('show');
+            const closeButton = document.getElementById('close');
+
+            // Mostrar el diálogo cuando se haga clic en el botón de contacto
+            showButton.addEventListener('click', () => {
+                dialog.showModal();
+            });
+
+            // Cerrar el diálogo cuando se haga clic en el botón cerrar
+            closeButton.addEventListener('click', () => {
+                dialog.close();
+            });
+        </script>
+
+    </main>
+    <footer>
+        <a href="#aboutme" data-lang="inicio">Ir al inicio</a><br>
+        <a href="mailto:juanmanuelgauna@gmail.com" data-lang="contactame">Contáctame aquí</a>
+        <p>&copy; Copyright Septiembre de 2024</p>
+    </footer>
+</body>
+
+</html>
