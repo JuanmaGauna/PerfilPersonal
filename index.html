@@ -17,72 +17,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">    
 </head>
 
 <body>
-    <!-- <audio autoplay src="sound/inicio.wav"></audio> -->
+    <audio autoplay src="sound/inicio.wav"></audio>
     <header>
-            <nav class="barraSuperior">
-                <a href="#experiencia" data-lang="experiencia">Experiencia</a>
-                <a href="#proyectos" data-lang="proyectos">Proyectos realizados</a>
-                <a href="https://www.linkedin.com/in/juanmanuelgauna" target="_blank" rel="noreferer">My LinkedIn</a>
-                <button onclick="cambiarIdioma('es')">🇦🇷</button>
-                <button onclick="cambiarIdioma('en')">🇺🇸</button>
-            </nav>
+        <nav class="barraSuperior">
+            <a href="#experiencia" data-lang="experiencia">Experiencia</a>
+            <a href="#aboutme" data-lang="proyectos">Proyectos realizados</a>
+            <a href="#experiencia" data-lang="experiencia">Acerca de mí</a>
+            <a href="https://www.linkedin.com/in/juanmanuelgauna" target="_blank" rel="noreferer"> MyLinkedIn</a>
+            
+            <!-- <button onclick="cambiarIdioma('es')">🇦🇷</button>
+                <button onclick="cambiarIdioma('en')">🇺🇸</button> -->
+            
+            <a href="#proyectos" data-lang="proyectos">Contacto</a>
+        </nav>
+        
+
         <h1 class="bg-6">
 
             <div class="glitch" data-text="Portfolio">Portfolio</div>
             <h1 class="nombrePropio">Juan Manuel Gauna</h1>
-            <h2>Fullstack developer</h2>
-            <p class="slogan">"Building the future, one line of code at a time."</p>
-            <div>
-                
-            </div>
-            
+                <h2>Fullstack developer</h2>
+                <p class="slogan">"Building the future, one line of code at a time."</p>
+                <div>
+
+                </div>
+
     </header>
 
     <main>
+        <img width=200px title="Juan Manuel Gauna" alt="Retrato de Juan Manuel Gauna" src="img/JuanGauna.png">
         <p data-lang="descripcion">
             Soy un profesional en el ámbito de las <strong>tecnologías</strong> y los <strong>sistemas</strong>, con una
             sólida trayectoria en la implementación y desarrollo de soluciones tecnológicas...
         </p>
         <h2 id="experiencia" data-lang="experiencia">Experiencia</h2>
+        <p>A lo largo de mi trayectoria profesional, he tenido la oportunidad de trabajar en una variedad de proyectos y roles dentro del ámbito tecnológico, lo que me ha permitido desarrollar un conjunto amplio de habilidades en diferentes áreas como desarrollo de software, gestión de sistemas, administración y emprendimiento. Si bien cuento con una experiencia extensa en múltiples sectores, he seleccionado algunas de las más relevantes para destacar mi capacidad técnica y mis habilidades en liderazgo, desarrollo y solución de problemas, que considero clave para los desafíos actuales del sector IT.</p>
         <ul>
-            <li class="list-item" data-lang="experienciaA">Experiencia A</li>
-            <li class="list-item" data-lang="experienciaB">Experiencia B</li>
-            <li class="list-item" data-lang="experienciaC">Experiencia C</li>
+            <li class="list-item" data-lang="experienciaA"><h3>Propietario - Compucor Informática (Actualidad)</h3>
+                Como fundador y propietario de Compucor Informática, gestiono todas las operaciones del negocio, brindando servicios técnicos especializados en computación, telefonía, televisión, audio y electrónica. A lo largo de mi experiencia, he adquirido un profundo conocimiento en la resolución de problemas técnicos, mantenimiento de hardware y software, así como en la atención al cliente y la venta de productos tecnológicos. Además, me encargo de la planificación estratégica y operativa del negocio, lo que ha fortalecido mis habilidades en liderazgo y gestión de proyectos.</li>
+            <li class="list-item" data-lang="experienciaB"><h3>Desarrollo de Aplicaciones Informáticas - E-Solutions S.A.</h3>
+                Durante mi paso por E-Solutions S.A., trabajé en el desarrollo de aplicaciones informáticas utilizando lenguajes de programación como PHP y SQL. Mi función principal consistió en colaborar con un equipo de desarrolladores para crear soluciones eficientes y escalables para diversos clientes. Este rol me permitió profundizar en el desarrollo backend y en la optimización de bases de datos, habilidades que son fundamentales en el desarrollo de software moderno.</li>
+            <li class="list-item" data-lang="experienciaC"><h3>Fundador y Docente del Laboratorio de Computación para Adultos</h3>
+                Como fundador del laboratorio de computación para adultos en EEMPA 1062, fui responsable de diseñar y coordinar un espacio educativo enfocado en la formación en informática básica para adultos. Además de impartir clases, me encargué de la gestión de los recursos tecnológicos y el diseño del programa educativo. Esta experiencia me permitió desarrollar habilidades pedagógicas y de comunicación, necesarias para transmitir conocimientos técnicos de forma clara y accesible.</li>
+            <li class="list-item" data-lang="experienciaD"><h3>Administración Gerencial y Sistemas de Información - Careglio Hnos. Srl.</h3>
+                    En Careglio Hnos. Srl, desempeñé funciones clave en administración gerencial, control de stock y sistemas de información, además de contribuir al diseño gráfico y la publicidad de la empresa. Me especialicé en la gestión de un sistema de control de stock eficiente, optimizando los procesos de inventario y automatización del flujo de información. Esta experiencia multifuncional me permitió adquirir habilidades en la gestión empresarial, el análisis de sistemas y la integración de soluciones tecnológicas para mejorar los procesos organizativos.</li>
+            <li class="list-item" data-lang="experienciaE"><h3>Ingeniería en Sistemas de Información - UTN (En curso)</h3>
+                Actualmente, me encuentro cursando el tercer año avanzado de la carrera de Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional (UTN). A través de esta formación, he adquirido una sólida base en programación, análisis de sistemas y diseño de software, utilizando herramientas como C++, Visual Basic 6.0, Kotlin, y Python. Mi formación académica me ha permitido profundizar en temas como el modelado de software con StarUML y el uso de SWI-Prolog para la lógica de programación, preparándome para enfrentar desafíos complejos en el mundo del desarrollo de software.</li>
+
         </ul>
-        <img width=200px title="Juan Manuel Gauna" alt="Retrato de Juan Manuel Gauna" src="img/JuanGauna.png">
+        
         <h2 id="proyectos" data-lang="proyectos">Proyectos realizados</h2>
         <aside>
             <header>
                 <h3 data-lang="tecnologiasFavoritas">Mis tecnologías favoritas</h3>
             </header>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>HTML - CSS</li>
+                <li>React</li>
                 <li>JavaScript</li>
-                <li>Node.js</li>
+                <li>SQL</li>
+                <li>HTTP/REST</li>
             </ul>
         </aside>
         <section>
             <article>
                 <header>
-                    <h4 data-lang="sitioCorporativo">Sitio web corporativo</h4>
+                    <!-- <h4 data-lang="sitioCorporativo">Sitio Linkedin </h4> -->
+                    
                 </header>
                 <p data-lang="descripcionProyecto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                    <h4><a href="https://www.linkedin.com/in/juanmanuelgauna" target="_blank" rel="noreferer"> Ir al sitio </a><i class="bi bi-linkedin"></i></h4>
                 </p>
             </article>
-            <footer>
-                <small data-lang="tecnologiasUsadas">Tecnologías utilizadas: HTML, CSS, JavaScript.</small>
-            </footer>
         </section>
 
-        <section>
+        <section><h3>Acerca de mí</h3>
             <details>
                 <summary>Mis "Hobbies"</summary>
                 <p>Me gusta mucho viajar, pasar tiempo con mi familia y amigos, conocer gente, tocar la guitarra,
@@ -129,8 +143,9 @@
             <button id="close">Cerrar</button>
         </dialog>
 
-        <button id="show">Contacto</button>
-
+        <br/>
+        <button id="show">➡️ Contacto 📬</button>
+        
         <script>
             // Obtener los elementos usando getElementById
             const dialog = document.getElementById('dialog');
@@ -150,8 +165,8 @@
 
     </main>
     <footer>
-        <a href="#aboutme" data-lang="inicio">Ir al inicio</a><br>
-        <a href="mailto:juanmanuelgauna@gmail.com" data-lang="contactame">Contáctame aquí</a>
+        <br/>
+        <a href="#aboutme" data-lang="inicio">🏠 Ir al inicio</a><br>
         <p>&copy; Copyright Septiembre de 2024</p>
     </footer>
 </body>
