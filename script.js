@@ -55,3 +55,21 @@ function cambiarIdioma(idioma) {
     });
 }
 
+function toggleContent(element) {
+    const content = element.querySelector(".experiencia-content");
+    const allContents = document.querySelectorAll(".experiencia-content");
+    
+    allContents.forEach((item) => {
+        if (item !== content) item.style.display = "none";
+    });
+
+    content.style.display = content.style.display === "block" ? "none" : "block";
+}
+document.addEventListener("click", (event) => {
+    if (!event.target.closest(".experiencia-item")) {
+        document.querySelectorAll(".experiencia-content").forEach((item) => {
+            item.style.display = "none";
+        });
+    }
+});
+
